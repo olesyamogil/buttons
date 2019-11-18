@@ -10,7 +10,7 @@ const Button = (props) => {
   }
   return (
     <a
-      className={`button ${props.size} ${props.color} ${props.status}`}
+      className={`button btn-size-${props.size} btn-color-${props.color} btn-status-${props.status}`}
       onClick={handleClick}
       href={props.link}
     >

@@ -13,12 +13,9 @@ $textColor: #fff;
   margin: 10px;
   border-radius: 5px;
   text-decoration: none;
-  &:hover {
-    cursor: pointer;
-  }
 }
 
-.small {
+.btn-size-small {
   width: 120px;
   $height: 35px;
   height: $height;
@@ -26,7 +23,7 @@ $textColor: #fff;
   font-size: 14px;
 }
 
-.medium {
+.btn-size-medium {
   width: 130px;
   $height: 50px;
   height: $height;
@@ -34,7 +31,7 @@ $textColor: #fff;
   font-size: 16px;
 }
 
-.large {
+.btn-size-large {
   width: 140px;
   $height: 60px;
   height: $height;
@@ -48,36 +45,36 @@ $textColor: #fff;
   color: $textColor;
 }
 
-.default {
+.btn-color-default {
   @include setColor($default-color, $textColor);
 }
 
-.success {
+.btn-color-success {
   @include setColor($success-color, $textColor);
 }
 
-.warning {
+.btn-color-warning {
   @include setColor($warning-color, $textColor);
 }
 
-.error {
+.btn-color-error {
   @include setColor($error-color, $textColor);
 }
 
-.disabled {
+.btn-status-disabled {
   @include setColor($disabled-color, $disabled-text-color);
   &:hover {
     cursor: not-allowed;
   }
 }
 
-.active {
+.btn-status-active {
   &:hover{
     cursor: pointer;
   }
 }
 
-.loading {
+.btn-status-loading {
   background-image: url("loading-icon.gif");
   background-position: left 10px top 50%;
   background-size: 20px;
