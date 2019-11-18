@@ -1,0 +1,2 @@
+(this.webpackJsonpbuttons=this.webpackJsonpbuttons||[]).push([[0],{3:function(t,e,n){t.exports=n(8)},8:function(t,e,n){"use strict";n.r(e);var o=n(0),r=n.n(o),u=n(2);var s=function(){return r.a.createElement("p",null,"hello")};n.n(u).a.render(r.a.createElement(s,null),document.getElementById("root"))}},[[3,1,2]]]);
+//# sourceMappingURL=main.b78692a0.chunk.js.map
