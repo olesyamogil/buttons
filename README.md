@@ -2,7 +2,7 @@
 
 ## Building instructions
 
-Button folder contains all files needed to use my Button component.
+src/Button folder contains all files needed to use my Button component.
 It may be imported into any project and used with these props:
 * size (small, medium, large)
 * color (default, success, warning, error)
