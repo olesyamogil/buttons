@@ -1,0 +1,88 @@
+$default-color: #338bff;
+$success-color: #3ccb51;
+$warning-color: #ffc83f;
+$error-color: #fa5e5b;
+$disabled-color: #ccc;
+$disabled-text-color: #333;
+$textColor: #fff;
+
+.button {
+  display: inline-block;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.small {
+  width: 120px;
+  $height: 35px;
+  height: $height;
+  line-height: $height;
+  font-size: 14px;
+}
+
+.medium {
+  width: 130px;
+  $height: 50px;
+  height: $height;
+  line-height: $height;
+  font-size: 16px;
+}
+
+.large {
+  width: 140px;
+  $height: 60px;
+  height: $height;
+  line-height: $height;
+  font-size: 18px;
+}
+
+@mixin setColor($color, $textColor) {
+  border: 1px solid $color;
+  background-color: $color;
+  color: $textColor;
+}
+
+.default {
+  @include setColor($default-color, $textColor);
+}
+
+.success {
+  @include setColor($success-color, $textColor);
+}
+
+.warning {
+  @include setColor($warning-color, $textColor);
+}
+
+.error {
+  @include setColor($error-color, $textColor);
+}
+
+.disabled {
+  @include setColor($disabled-color, $disabled-text-color);
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.active {
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.loading {
+  background-image: url("loading-icon.gif");
+  background-position: left 10px top 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  &:hover {
+    cursor: wait;
+  }
+}
